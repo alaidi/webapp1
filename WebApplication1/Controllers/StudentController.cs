@@ -30,7 +30,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(FormCollection model)
+        public ActionResult Index(List<Student> model)// problem is here
         {
             if (ModelState.IsValid)
             {
